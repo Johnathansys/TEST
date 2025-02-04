@@ -1,7 +1,11 @@
-<div id="output">something</div>
-<button onclick=update()> Click </button>
+<div id="output">Please enter your username:</div>
+<input id="output">
+<button onclick=validate()> Done </button>
 <script>
-    function update(){
-        document.getElementById("¿Que tal?").innerHTML='new stuff'
+    function validate(){
+        if (document.getElementById("input").value.length==0)
+            {document.getElementById("output").innerHTML = "cannot be blank"}
+        else
+            {document.getElementById("output").innerHTML = "user submitted"}
     }
 </script>
